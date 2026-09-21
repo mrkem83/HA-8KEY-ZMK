@@ -1,0 +1,6 @@
+---
+include:
+  - board: nice_nano//zmk
+    shield: ha8key
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y

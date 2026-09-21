@@ -1,0 +1,8 @@
+file_format: "1"
+id: ha8key
+name: HA 8KEY
+type: shield
+url: https://example.invalid
+requires: [pro_micro]
+features:
+  - keys

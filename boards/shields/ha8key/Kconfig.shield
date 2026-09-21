@@ -1,0 +1,2 @@
+config SHIELD_HA8KEY
+    def_bool $(shields_list_contains,ha8key)
