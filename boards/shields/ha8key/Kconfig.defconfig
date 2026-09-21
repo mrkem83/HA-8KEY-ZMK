@@ -1,4 +1,6 @@
 if SHIELD_HA8KEY
+
 config ZMK_KEYBOARD_NAME
     default "HA 8KEY"
+
 endif
