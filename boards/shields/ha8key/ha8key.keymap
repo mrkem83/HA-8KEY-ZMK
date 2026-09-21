@@ -2,14 +2,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        studio_unlock_combo {
+            timeout-ms = <100>;
+            key-positions = <0 7>;
+            bindings = <&studio_unlock>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "Main";
             bindings = <
-                &studio_unlock  &kp RIGHT &kp UP    &kp DOWN
-                &kp ENTER      &kp ESC   &kp SPACE &kp TAB
+                &kp LEFT  &kp RIGHT &kp UP    &kp DOWN
+                &kp ENTER &kp ESC   &kp SPACE &kp TAB
             >;
         };
     };
