@@ -11,16 +11,16 @@
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
-        input-gpios
-            = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+              input-gpios
+            = <&gpio0 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio0 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio1 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&gpio1 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio1 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            ;
+            , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio1 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            ;  
     };
 
     default_transform: matrix_transform {
@@ -39,14 +39,14 @@ RC(0,4) RC(0,5) RC(0,6) RC(0,7)
         kscan = <&kscan0>;
         transform = <&default_transform>;
               keys
-            = <&key_physical_attrs 100 100  55 105 0 0 0>
+            = <&key_physical_attrs 100 100   0   0 0 0 0>
             , <&key_physical_attrs 100 100 110   0 0 0 0>
-            , <&key_physical_attrs 100 100   0   0 0 0 0>
-            , <&key_physical_attrs 100 100 110 210 0 0 0>
-            , <&key_physical_attrs 100 100   0 210 0 0 0>
-            , <&key_physical_attrs 100 100 220 210 0 0 0>
             , <&key_physical_attrs 100 100 220   0 0 0 0>
+            , <&key_physical_attrs 100 100  55 105 0 0 0>
             , <&key_physical_attrs 100 100 165 105 0 0 0>
-            ;     
+            , <&key_physical_attrs 100 100   0 210 0 0 0>
+            , <&key_physical_attrs 100 100 110 210 0 0 0>
+            , <&key_physical_attrs 100 100 220 210 0 0 0>
+            ;      
     };
 };
