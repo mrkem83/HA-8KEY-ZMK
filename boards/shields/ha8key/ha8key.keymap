@@ -9,6 +9,11 @@
             timeout-ms = <100>;
             key-positions = <0 7>;
             bindings = <&studio_unlock>;
+        };       
+bootloader_combo {
+            timeout-ms = <100>;
+            key-positions = <5 6>;
+            bindings = <&bootloader>;
         };
     };
 
