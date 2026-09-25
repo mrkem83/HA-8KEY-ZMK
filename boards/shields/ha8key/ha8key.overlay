@@ -28,8 +28,9 @@
         rows = <1>;
         columns = <8>;
         map = <
-            RC(0,0) RC(0,1) RC(0,2) RC(0,3)
-            RC(0,4) RC(0,5) RC(0,6) RC(0,7)
+RC(0,2) RC(0,1) RC(0,5)
+RC(0,0) RC(0,7)
+RC(0,3) RC(0,6) RC(0,4)  
         >;
     };
 
@@ -38,15 +39,15 @@
         display-name = "HA 8-Key";
         kscan = <&kscan0>;
         transform = <&default_transform>;
-            keys
-            = <&key_physical_attrs 100 100 200   0 0 0 0>
-            , <&key_physical_attrs 100 100 100   0 0 0 0>
-            , <&key_physical_attrs 100 100 400   0 0 0 0>
-            , <&key_physical_attrs 100 100 150 100 0 0 0>
-            , <&key_physical_attrs 100 100 300 100 0 0 0>
-            , <&key_physical_attrs 100 100   0 200 0 0 0>
-            , <&key_physical_attrs 100 100 200 200 0 0 0>
-            , <&key_physical_attrs 100 100 400 200 0 0 0>
-            ;    
+           keys
+            = <&key_physical_attrs 100 100   0   0 0 0 0>
+            , <&key_physical_attrs 100 100 110   0 0 0 0>
+            , <&key_physical_attrs 100 100 220   0 0 0 0>
+            , <&key_physical_attrs 100 100  55 105 0 0 0>
+            , <&key_physical_attrs 100 100 165 105 0 0 0>
+            , <&key_physical_attrs 100 100   0 210 0 0 0>
+            , <&key_physical_attrs 100 100 110 210 0 0 0>
+            , <&key_physical_attrs 100 100 220 210 0 0 0>
+            ;         
     };
 };
