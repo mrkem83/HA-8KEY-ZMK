@@ -1,0 +1,28 @@
+menu "HA 8KEY Auto Host"
+
+config HA_AUTO_HOST
+    bool "HA automatic Bluetooth host selection"
+    default y
+    depends on ZMK_BLE
+
+if HA_AUTO_HOST
+
+config HA_AUTO_HOST_START_DELAY_MS
+    int "Startup grace period (ms)"
+    default 5000
+
+config HA_AUTO_HOST_POLL_MS
+    int "Host check interval (ms)"
+    default 1000
+
+config HA_AUTO_HOST_NEW_PAIR_DELAY_MS
+    int "Delay before selecting an empty profile (ms)"
+    default 10000
+
+config HA_AUTO_HOST_LOG_LEVEL
+    int "Log level"
+    default 2
+    range 0 4
+
+endif
+endmenu
