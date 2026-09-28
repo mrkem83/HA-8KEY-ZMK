@@ -1,6 +1,5 @@
-name: ha-8key
 build:
   cmake: zephyr
   kconfig: zephyr/Kconfig
-settings:
-  board_root: .
+  settings:
+    board_root: .
