@@ -15,6 +15,11 @@ bootloader_combo {
             key-positions = <5 6>;
             bindings = <&bootloader>;
         };
+        bt_clear_combo {
+            timeout-ms = <100>;
+            key-positions = <3 4>;
+            bindings = <&bt BT_CLR_ALL>;
+        };
     };
 
     keymap {
